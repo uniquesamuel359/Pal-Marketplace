@@ -1,0 +1,122 @@
+:root {
+    --primary-blue: #1e3a8a;
+    --light-blue: #dbeafe;
+    --accent-blue: #3b82f6;
+    --dark-text: #1e293b;
+    --white: #ffffff;
+    --gold: #fbbf24;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 480px; /* Keeps it looking like a phone on desktop */
+    background: var(--white);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-blue);
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-blue);
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.greeting h1 { font-size: 1.2rem; opacity: 0.8; }
+.greeting h2 { font-size: 2rem; }
+
+.streak-badge {
+    background: var(--white);
+    color: var(--primary-blue);
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Advice Bubble */
+.ai-advice .section-label {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.advice-bubble {
+    background: var(--light-blue);
+    padding: 15px;
+    border-radius: 15px 15px 15px 0;
+    border: 1px solid var(--accent-blue);
+    margin-bottom: 25px;
+}
+
+/* Grid Tools */
+h3 { color: var(--dark-text); margin-bottom: 15px; font-size: 1rem; }
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.tool-card {
+    background: var(--white);
+    border: 2px solid var(--light-blue);
+    padding: 20px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tool-card:hover { transform: translateY(-5px); border-color: var(--accent-blue); }
+.tool-card i { font-size: 1.5rem; color: var(--accent-blue); }
+.tool-card span { font-weight: 600; font-size: 0.9rem; text-align: center; color: var(--dark-text); }
+
+/* Pro Button */
+.tool-card.pro { background: #fefce8; border-color: var(--gold); }
+.tool-card.pro i { color: var(--gold); }
+
+/* Footer Ad */
+footer { margin-top: auto; padding-top: 20px; }
+.ad-banner {
+    background: #e2e8f0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student AI Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <i class="fas fa-bars"></i>
+            <span class="exam-countdown">155 DAYS TO EXAM</span>
+            <div class="top-icons">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-cog"></i>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="greeting">
+                <h1>Hello</h1>
+                <h2 id="userName">User Name</h2>
+            </div>
+            <div class="streak-badge">
+                <span class="streak-count">13 days</span>
+                <span class="streak-label">STREAK</span>
+                <div class="streak-icon">🔥</div>
+            </div>
+        </section>
+
+        <section class="ai-advice">
+            <p class="section-label">PAI's advice from recent activities</p>
+            <div class="advice-bubble">
+                <p>Hey, you didn't do well during the last quiz in Chem. Need a review? <a href="#">Dive Deeper →</a></p>
+            </div>
+        </section>
+
+        <section class="tools-section">
+            <h3>QUICK TOOLS</h3>
+            <div class="tools-grid">
+                <button class="tool-card" onclick="startFeature('research')">
+                    <i class="fas fa-microscope"></i>
+                    <span>Deep Research</span>
+                </button>
+                <button class="tool-card" onclick="startFeature('cbt')">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>CBT Mode</span>
+                </button>
+                <button class="tool-card" onclick="startFeature('past-questions')">
+                    <i class="fas fa-book-open"></i>
+                    <span>Past Questions</span>
+                </button>
+                <button class="tool-card" onclick="startFeature('summary')">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Quick Summary</span>
+                </button>
+                <button class="tool-card" onclick="startFeature('quizzes')">
+                    <i class="fas fa-tasks"></i>
+                    <span>Automated Quizzes</span>
+                </button>
+                <button class="tool-card pro" onclick="startFeature('membership')">
+                    <i class="fas fa-crown"></i>
+                    <span>Membership Pro Pass</span>
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="ad-banner">
+                <span>Ad</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
