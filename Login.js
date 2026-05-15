@@ -64,3 +64,5 @@ signInForm.addEventListener('submit', (e) => {
         wrapper.classList.add('active');
     }
 });
+
+localStorage.setItem('activeUser', user.username); // Saves "Samuel" for the home page

@@ -107,6 +107,7 @@ button {
   border: none;
   outline: none;
 }
+
 .signUp-link {
   font-size: 14px;
   text-align: center;
@@ -123,4 +124,5 @@ button {
 .signUp-link p a:hover {
   text-decoration: underline;
 }
+
 
