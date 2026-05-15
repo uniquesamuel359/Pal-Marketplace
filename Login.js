@@ -34,6 +34,9 @@ signUpForm.addEventListener('submit', (e) => {
         users.push({ username, email, password });
         localStorage.setItem('users', JSON.stringify(users));
 
+        // --- ADDED: Save active user on successful sign-up ---
+        localStorage.setItem('activeUser', username);
+
         alert("Registration Successful! Welcome to the app.");
         // DIRECT REDIRECT
         window.location.href = 'home.html'; 
@@ -53,6 +56,9 @@ signInForm.addEventListener('submit', (e) => {
 
     if (user) {
         if (user.password === passwordInput) {
+            // --- ADDED: Save active user on successful login ---
+            localStorage.setItem('activeUser', user.username);
+            
             // DIRECT REDIRECT
             window.location.href = 'home.html';
         } else {
@@ -64,5 +70,3 @@ signInForm.addEventListener('submit', (e) => {
         wrapper.classList.add('active');
     }
 });
-
-localStorage.setItem('activeUser', user.username); // Saves "Samuel" for the home page
